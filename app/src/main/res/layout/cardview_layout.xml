@@ -1,0 +1,138 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    android:layout_margin="6dp"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="8dp">
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:animateLayoutChanges="true">
+
+    <TextView
+        android:id="@+id/title"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="40dp"
+        android:text="Title of Session"
+
+        />
+    <TextView
+        android:id="@+id/speakername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Speaker name goes here"
+        />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/favourite"
+            android:layout_margin="4dp"
+            android:layout_alignParentEnd="true"
+
+            />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:text="00:00"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:layout_toLeftOf="@+id/time"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:textSize="12sp"
+
+            />
+
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_below="@id/speakerimage"
+                android:layout_margin="8dp"
+            />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/twitter"
+            android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+            android:layout_below="@id/speakername"
+                android:visibility="gone"
+                android:textSize="10sp"
+
+            />
+            <TextView
+                android:id="@+id/bio"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@id/speakerimage"
+                android:layout_below="@id/twitter"
+                android:layout_margin="12dp"
+                android:textSize="12dp"
+                android:visibility="gone"
+                android:scrollbars = "vertical"
+                />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/speakerimage"
+                android:layout_below="@id/twitter"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/locationName"
+                android:layout_below="@id/content"
+                android:layout_marginLeft="8dp"
+                android:visibility="gone"
+                />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationDesc"
+            android:layout_below="@id/locationName"
+            android:layout_marginLeft="8dp"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"
+            />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
